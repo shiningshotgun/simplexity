@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Paper PDF & reference documents
+paper.pdf
+*.pdf
+.paper_extracted.txt
+
+# Bulky outputs, logs and checkpoints
+checkpoints/
+logs/
+*.log
+runs/
+outputs/*.log
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Packaging
+dist/
+build/
+*.egg-info/

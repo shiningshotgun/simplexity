@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the original paper and this reproduction."
+title: "simplexity: Reproduction of 'Transformers Represent Belief State Geometry in their Residual Stream'"
+authors:
+  - name: "shiningshotgun"
+url: "https://github.com/shiningshotgun/simplexity"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Shai"
+      given-names: "Adam S."
+    - family-names: "Marzen"
+      given-names: "Sarah E."
+    - family-names: "Teixeira"
+      given-names: "Lucas"
+    - family-names: "Oldenziel"
+      given-names: "Alexander"
+    - family-names: "Riechers"
+      given-names: "Paul M."
+  title: "Transformers Represent Belief State Geometry in their Residual Stream"
+  journal: "Advances in Neural Information Processing Systems (NeurIPS 2024)"
+  year: 2024
+  url: "https://arxiv.org/abs/2405.15943"

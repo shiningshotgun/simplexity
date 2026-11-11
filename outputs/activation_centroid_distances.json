@@ -1,0 +1,46 @@
+{
+  "rrxor": {
+    "blocks.0.hook_resid_post": {
+      "r2_centroid_vs_belief": 0.09279009550943303,
+      "pearson_r": -0.30461466725919983,
+      "num_evaluated_states": 35
+    },
+    "blocks.1.hook_resid_post": {
+      "r2_centroid_vs_belief": 0.1126343478152707,
+      "pearson_r": -0.33561041076711357,
+      "num_evaluated_states": 35
+    },
+    "blocks.2.hook_resid_post": {
+      "r2_centroid_vs_belief": 0.09304251718422397,
+      "pearson_r": -0.30502871534369347,
+      "num_evaluated_states": 35
+    },
+    "blocks.3.hook_resid_post": {
+      "r2_centroid_vs_belief": 0.07062620261947979,
+      "pearson_r": -0.26575590796721676,
+      "num_evaluated_states": 35
+    },
+    "concat": {
+      "r2_centroid_vs_belief": 0.08710623633751922,
+      "pearson_r": -0.2951376565901397,
+      "num_evaluated_states": 35
+    },
+    "ln_final.hook_normalized": {
+      "r2_centroid_vs_belief": 0.004932698413416623,
+      "pearson_r": -0.07023317174538413,
+      "num_evaluated_states": 35
+    }
+  },
+  "mess3": {
+    "blocks.3.hook_resid_post": {
+      "r2_centroid_vs_belief": 0.5517200881811127,
+      "pearson_r": 0.7427786266318605,
+      "num_evaluated_states": 500
+    },
+    "ln_final.hook_normalized": {
+      "r2_centroid_vs_belief": 0.5210479278626406,
+      "pearson_r": 0.7218364966269305,
+      "num_evaluated_states": 500
+    }
+  }
+}

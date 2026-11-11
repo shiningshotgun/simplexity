@@ -1,0 +1,23 @@
+# simplexity: LLM Map
+
+Clean-room reproduction repository for Shai, Marzen, Teixeira, Oldenziel & Riechers,
+"Transformers Represent Belief State Geometry in their Residual Stream" (NeurIPS 2024).
+
+## Architecture & Code
+- `src/simplexity/processes.py`: Mess3 and RRXOR data generating HMM processes, transition matrices (Appendix A.3), stationary distributions (Gate 1 & 2), categorical sequence sampling.
+- `src/simplexity/belief.py`: Exact rational Fraction and float belief update machinery, reachable belief state deduplication (Gate 3: exactly 36 states for RRXOR), prefix enumeration.
+- `src/simplexity/entropy.py`: Optimal finite-context cross-entropy computation for context window 10 over 9 autoregressive prediction positions (Gate 5).
+- `src/simplexity/visualization.py`: 2-simplex equilateral projection and RGB plotting matching paper Figure 5B (Gate 4: `figures/GT_mess3.png`).
+- `src/simplexity/model.py`: Model specifications (Appendix A.6), parameter counting (143,075 for Mess3, 142,946 for RRXOR), TransformerLens interface and explicit PyTorch reference architecture with exact residual stream hookpoints.
+- `src/simplexity/train.py`: SGD training loop (batch size 64, lr 0.01, 1M iterations), geometric checkpoint schedule, evaluation loss normalization, 1,000-step pilot benchmarking.
+- `src/simplexity/probes.py`: Linear regression probes (Appendix A.5), 1000x shuffle control, 1000x 20/80 train/test cross-validation (Appendix A.7), pairwise distance correlation analysis.
+- `src/simplexity/cli.py`: CLI dispatcher for `run-gates` and `pilot`.
+
+## Key Gates & Baseline Numbers
+- Gate 1: Stationary distributions: Mess3 [1/3, 1/3, 1/3]; RRXOR [1/3, 1/6, 1/6, 1/6, 1/6].
+- Gate 2: Stochastic matrix row sums = 1.0.
+- Gate 3: RRXOR reachable beliefs = exactly 36 (stabilizes at sequence length 6).
+- Gate 4: Mess3 ground truth 2-simplex fractal plot (`figures/GT_mess3.png`).
+- Gate 5: 9-position optimal cross-entropy normalization constants:
+  * Mess3: 0.803518 nats
+  * RRXOR: 0.586501 nats (position 0 is exactly ln(2) = 0.693147 nats)

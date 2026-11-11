@@ -1,0 +1,83 @@
+[
+  {
+    "step": 100,
+    "train_loss": 0.6738404631614685,
+    "val_loss": 0.6771938920021057,
+    "val_loss_normalized": 1.1546328652706388,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 2.6518944580166135,
+    "steps_per_second": 37.70889135414209
+  },
+  {
+    "step": 200,
+    "train_loss": 0.6778757572174072,
+    "val_loss": 0.6640296459197998,
+    "val_loss_normalized": 1.132187489798922,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 5.217873457993846,
+    "steps_per_second": 38.32979117069187
+  },
+  {
+    "step": 500,
+    "train_loss": 0.6495489478111267,
+    "val_loss": 0.655421569943428,
+    "val_loss_normalized": 1.1175105006139183,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 12.739849958015839,
+    "steps_per_second": 39.24693003824609
+  },
+  {
+    "step": 1000,
+    "train_loss": 0.619918704032898,
+    "val_loss": 0.6410248279571533,
+    "val_loss_normalized": 1.0929636881773364,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 25.022236958000576,
+    "steps_per_second": 39.96445248594216
+  },
+  {
+    "step": 2000,
+    "train_loss": 0.6409958004951477,
+    "val_loss": 0.6318795323371887,
+    "val_loss_normalized": 1.0773707257922092,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 48.13139391699224,
+    "steps_per_second": 41.55292081191779
+  },
+  {
+    "step": 5000,
+    "train_loss": 0.626645565032959,
+    "val_loss": 0.6159857332706451,
+    "val_loss_normalized": 1.0502713928345782,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 115.31750529201236,
+    "steps_per_second": 43.358551568894654
+  },
+  {
+    "step": 10000,
+    "train_loss": 0.6168795228004456,
+    "val_loss": 0.604872927069664,
+    "val_loss_normalized": 1.031323774705447,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 220.3584755420161,
+    "steps_per_second": 45.38060074795391
+  },
+  {
+    "step": 15000,
+    "train_loss": 0.5966677665710449,
+    "val_loss": 0.6015159249305725,
+    "val_loss_normalized": 1.0256000004003962,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 362.26281733301585,
+    "steps_per_second": 41.40640243023068
+  },
+  {
+    "step": 20000,
+    "train_loss": 0.5972024202346802,
+    "val_loss": 0.5945816218852997,
+    "val_loss_normalized": 1.013776836771222,
+    "optimal_loss": 0.5865014866378115,
+    "elapsed_seconds": 545.6171667920134,
+    "steps_per_second": 36.6557381571975
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "mess3": {
+    "process": "Mess3",
+    "step": 20000,
+    "final_layer_pre_ln_mse": 0.008260195174893929,
+    "final_layer_pre_ln_r2": 0.9752281977230777,
+    "final_layer_post_ln_mse": 0.007844905949232827,
+    "final_layer_post_ln_r2": 0.9764736238138655,
+    "shuffle_control": {
+      "mean_mse": 0.3254394760891987,
+      "std_mse": 0.001049583488949201,
+      "min_mse": 0.32213973693897935,
+      "max_mse": 0.3283442092389552
+    },
+    "cross_validation": {
+      "mean_test_mse": 0.009546616571443215,
+      "std_test_mse": 0.00038631172807675147,
+      "min_test_mse": 0.008425441405953311,
+      "max_test_mse": 0.011432282445983528
+    },
+    "pairwise_r2_repr": 0.752149270777547,
+    "pairwise_r2_next_token": 0.9999999900529113
+  },
+  "rrxor": {
+    "process": "RRXOR",
+    "step": 20000,
+    "layer_mses": {
+      "blocks.0.hook_resid_post": 0.24214968730744726,
+      "blocks.1.hook_resid_post": 0.22718892077181094,
+      "blocks.2.hook_resid_post": 0.2114949696066822,
+      "blocks.3.hook_resid_post": 0.20255392212800602,
+      "concat": 0.09358048142992625,
+      "ln_final.hook_normalized": 0.20462996223285845
+    },
+    "layer_r2s": {
+      "blocks.0.hook_resid_post": 0.39720177891454866,
+      "blocks.1.hook_resid_post": 0.4344445420749493,
+      "blocks.2.hook_resid_post": 0.4735124671643186,
+      "blocks.3.hook_resid_post": 0.4957699706726487,
+      "concat": 0.7670443089911652,
+      "ln_final.hook_normalized": 0.4906019554006811
+    },
+    "final_layer_pre_ln_mse": 0.20255392212800602,
+    "final_layer_post_ln_mse": 0.20462996223285845,
+    "concat_mse": 0.09358048142992625,
+    "shuffle_control": {
+      "mean_mse": 0.35486203311513204,
+      "std_mse": 0.0017504969930115981,
+      "min_mse": 0.3486814416340679,
+      "max_mse": 0.36011519008908716
+    },
+    "cross_validation": {
+      "mean_test_mse": 0.5602568369903403,
+      "std_test_mse": 0.07440171269186047,
+      "min_test_mse": 0.3798649209687378,
+      "max_test_mse": 0.8699509810654299
+    },
+    "pairwise_r2_repr": 0.18912221349366196,
+    "pairwise_r2_next_token": 0.23874219299922925
+  }
+}
